@@ -1,0 +1,55 @@
+ .panel {
+            width: 60%;
+            margin: 0 auto;
+            border : solid blue 2px
+            
+        }
+       .p {
+            font-weight: bold;
+            font-size: 22px;
+            background-color: aqua;
+            padding : 20px;
+            color : rgba(19, 2, 2, 0.698);
+            
+        }
+        .p label {
+            margin-left: 32%;
+            font-size: 30px;
+            color: rgb(3, 23, 42);    
+        }
+        .panel-heading {
+            font-weight: bold;
+            font-size: 22px;
+            background-color: aqua;
+            padding : 20px;
+            color : rgba(19, 2, 2, 0.698);
+        }
+        
+        .panel-body label {
+            
+            padding: 10px;
+            font-weight: bold;
+        }
+        .form-group {
+            display : block;
+            margin-bottom: 20px;
+        }
+        .from-control{
+            margin-top: 20px;
+           width : 824px;
+            display : block;           
+            font-size: 16px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .d{
+            width: 100px;
+            height: 30px;
+            margin-left: 20px;
+        }
+        .table {
+            width: 100%;
+        }
+        .table tr {
+            border-bottom : solid blue 2px;
+        }

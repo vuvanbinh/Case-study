@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="qLSP.css">
+</head>
+
+<body>
+    <div class="panel">
+        <div class="p">
+            <label> Quản Lý Xuất Hàng </label>
+        </div>
+        <div class="panel-heading">
+           Nhập Thông Tin Về Sản Phẩm
+        </div>
+        <div class="panel-body">
+           <form ethod="post">
+            <div class="form-group">
+                <label>Ngày xuất hàng</label>
+                <input class="from-control" type="date" name="ngaythang"
+                 id="ngaythang">
+            </div>
+            <div class="form-group">
+                <label>Chợ Lấy Hàng</label>
+                <select class="from-control" name="cholayhang" 
+                id="cholayhang"
+                ><option value="">-Chọn Chợ-</option></select>
+            </div>
+            <div class="form-group">
+                <label>Loại Hàng</label>
+                <select class="from-control" name="loaihang" 
+                id="loaihang"
+                ><option value="">-Chọn loại hàng-</option></select>
+            </div>
+            <div class="form-group">
+                <label>Đơn Giá</label>
+                <input class="from-control" type="number" 
+                name="dongia" id="donGia">
+            </div>
+            <div class="form-group">
+                <label>Số Lượng</label>
+                <input class="from-control" type="number" 
+                name="soLuong" id="soluong">
+            </div>
+            <div class="form-group">
+                <label>Thành Tiền</label>
+                <input class="from-control" type="text" 
+                name="thanhTien" id="thanhTien">
+            </div>
+            <div class="form-group">
+                <button class='d' id='luuSanPham' type="button">AddSP</button>
+                <button class='d' type="reset">Reset</button>
+            </div>
+           </form>          
+        </div>
+    </div>
+    <div class="panel" style="margin-top : 20px">
+        <div class="panel-heading">Danh Sách Sản Phẩm Đã Xuất</div>
+        <div class="panel-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                         <th>STT</th>
+                         <th>Ngày</th>
+                         <th>Chợ Lấy Hàng</th>
+                         <th>Loại Hàng</th>
+                         <th>Đơn Giá</th>
+                         <th>Số Lượng</th>
+                         <th>Thành Tiền</th>
+                         <th></th>
+                         <th></th>
+                    </tr>
+                </thead>
+                <tbody id="result">
+
+                </tbody>
+            </table>
+        </div>
+    </div>  
+</body>
+<script src="qLSP.js"></script>
+</html>
