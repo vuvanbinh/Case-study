@@ -24,7 +24,15 @@ function hienthisp1(as) {
             "</tr>"
     }
     document.getElementById('result').innerHTML=bug;
-    
+}
+function demo(){
+    document.getElementById("index").value = "";
+    document.getElementById("ngaythang").value="";
+    document.getElementById("cho").value="";
+    document.getElementById("hang").value="";
+    document.getElementById("gia").value="";
+    document.getElementById("khoiluong").value="";
+    document.getElementById("tongtien").value="";
 }
 
 function aa(){
@@ -54,14 +62,7 @@ function addsp() {
     luusanpham.push(newsp);
     }
     hienthisp1(luusanpham);
-    // document.getElementById("index").value = "";
-    // document.getElementById("ngaythang").value="";
-    // document.getElementById("cho").value="";
-    // document.getElementById("hang").value="";
-    // document.getElementById("gia").value="";
-    // document.getElementById("khoiluong").value="";
-    // document.getElementById("tongtien").value="";
-
+    demo()
 }
 
 
@@ -88,13 +89,7 @@ function sua(index){
     luusanpham[index].soluong=document.getElementById("khoiluong").value;
     luusanpham[index].tongtien=document.getElementById("tongtien").value;
     hienthisp1(luusanpham);
-    document.getElementById("index").value = "";
-    document.getElementById("ngaythang").value="";
-    document.getElementById("cho").value="";
-    document.getElementById("hang").value="";
-    document.getElementById("gia").value="";
-    document.getElementById("khoiluong").value="";
-    document.getElementById("tongtien").value="";
+    demo();
  }
 function timkiem(){
     let a = document.getElementById("nhaptimkiem").value;
