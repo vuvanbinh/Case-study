@@ -1,5 +1,5 @@
  .panel {
-            width: 60%;
+            width: 90%;
             margin: 0 auto;
             border : solid blue 2px
             
@@ -36,15 +36,15 @@
         }
         .from-control{
             margin-top: 20px;
-           width : 824px;
+           width : 98.5%;
             display : block;           
             font-size: 16px;
             margin-top: 10px;
             margin-left: 10px;
         }
         .d{
-            width: 100px;
-            height: 30px;
+            width: 140px;
+            height: 35px;
             margin-left: 20px;
         }
         .table {
@@ -52,4 +52,11 @@
         }
         .table tr {
             border-bottom : solid blue 2px;
+        }
+        .ac {
+            padding-left: 58px;
+        }
+        .dd{
+          text-align: center;
+            
         }

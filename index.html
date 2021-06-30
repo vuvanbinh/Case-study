@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="qLSP.css">
+</head>
+<script src="qlspp.js"></script>
+<body>
+    <div class="panel">
+        <div class="p">
+            <label> Quản Lý Xuất Hàng </label>
+        </div>
+        <div class="panel-heading">
+           Nhập Thông Tin Về Sản Phẩm
+        </div>
+        <div class="panel-body">
+           <form ethod="post">
+               <input type="text" id="index" hidden>
+            <div class="form-group">
+                <label>Ngày xuất hàng</label>
+                <input class="from-control" type="date" 
+                 id="ngaythang">
+            </div>
+            <div class="form-group">
+                <label>Chợ Lấy Hàng</label>
+                <select class="from-control"  
+                id="cho" 
+                ><option value="">-Chọn Chợ-</option>
+                ><option value="Hà Nội">Hà Nội</option>
+                ><option value="Nam Định">Nam Định</option>
+                ><option value="Ninh Bình.1">Ninh Bình.1</option>
+                ><option value="Ninh Bình.2">Ninh Bình.2</option>
+                ><option value="Thanh Hoá">Thanh Hoá</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label>Loại Hàng</label>
+                <select class="from-control" id="hang">
+                    <option value="">-Chọn loại hành-</option>
+                    <option value="Hành khô cắt">Hành khô cắt</option>
+                    <option value="Hành dưa">Hành dưa</option>
+                    <option value="Hành tươi cắt">Hành tươi cắt</option>
+                    <option value="Hành dây">Hành dây</option>
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Đơn Giá</label>
+                <input class="from-control" type="number" oninput="aa()" 
+                 id="gia">
+            </div>
+            <div class="form-group">
+                <label>Số Lượng</label>
+                <input class="from-control" type="number" oninput="aa()"
+                 id="khoiluong">
+            </div>
+            <div class="form-group">
+                <label>Thành Tiền</label>
+                <input class="from-control" type="text" 
+                 id="tongtien" disabled = "false">
+            </div>
+            <div class="form-group">
+                <button class='d'  type="button"
+                onclick="addsp()" >Lưu Vào Danh sách</button>
+                <button class='d'  type="button"
+                onclick="capnhatsp()" >Cập nhật sửa</button>
+            </div>
+           </form>          
+        </div>
+    </div><br>
+   <div class="dd">
+    <input type="text"  id="nhaptimkiem" placeholder="Nhập tên chợ cần tìm"
+    style="width:350px;height:30px" >
+    <button  type="button"
+    onclick="timkiem()" style="height:30px">Tìm Kiếm Sản Phẩm</button>
+   </div>
+       
+    <div class="panel" style="margin-top : 20px">
+        <!-- <button class='dd' type="button"
+        onclick="hienthisp()" >Hienthisp</button> -->
+        <div onclick="hienthilai()" class="panel-heading">Danh Sách Sản Phẩm Đã Xuất</div>
+        <div class="panel-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                         <th class="ac">STT</th>
+                         <th class="ac">Ngày</th>
+                         <th class="ac">Chợ Lấy Hàng</th>
+                         <th class="ac">Loại Hàng</th>
+                         <th class="ac">Đơn Giá</th>
+                         <th class="ac">Số Lượng</th>
+                         <th class="ac">Thành Tiền</th>
+                         <th class="ac">Edit</th>
+                         <th class="ac">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="result"></tbody>
+            </table>
+        </div>
+    </div>  
+</body>
+</html>
